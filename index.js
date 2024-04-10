@@ -50,7 +50,7 @@ keys.addEventListener("click", (e) => {
         // sätter isFirstValue till false så att vi börjar skriva på secondValue
         isFirstValue = false;
         
-        // Konvertera till exemple: "045" -> 45 (som nummer så man kan göra matematiska processer som addition och subrtaktion)
+        // Konvertera till exemple: "045" -> 45 (som nummer så man kan göra matematiska processer som addition och subrtaktion utan att 1 + 5 = 15, så 1 + 5 = 6)
         firstValue = Number(firstValue);
 
 
@@ -60,7 +60,7 @@ keys.addEventListener("click", (e) => {
         firstValue = Number(firstValue);
     } else if (e.target.value == "=") {
 
-        // Konvertera till exemple: "045" -> 45 (som nummer så man kan göra matematiska processer som addition och subrtaktion)
+        // Konvertera till exemple: "045" -> 45 (som nummer så man kan göra matematiska processer som addition och subrtaktion utan att 1 + 5 = 15, så 1 + 5 = 6)
         secondValue = Number(secondValue);
 
         //spara värdet
