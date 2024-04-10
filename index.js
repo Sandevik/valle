@@ -65,6 +65,20 @@ keys.addEventListener("click", (e) => {
 
         //spara värdet
         sum = firstValue + secondValue;
+
+        // vi kan sätta firstValue till sum om vi vill att nästa operation ska börja med det sista värdet
+        // till exempel: 1 + 1 = 2, sen vill vi göra resultatet 2 - 5 till exempel för att ta reda på nästa värde
+
+        firstValue = sum;
+        
+        //reseta sum till 0
+        sum = 0;
+
+        //reseta secondValue till "0"
+        secondValue = "0";
+
+        //eftersom vi redan har första värdet, summan av den förra operationen, kan vi behålle isFirstValue som false då vi bara vill ändra det andra numret.
+        isFirstValue = false
     }
 })
 
